@@ -12,3 +12,26 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.container {
+    width: 800px;
+    max-width: 80%;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: navy;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: salmon;
+}

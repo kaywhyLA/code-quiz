@@ -15,3 +15,6 @@ Instructions:
     then the game is over
     when the game is over
     then I can save my initials and score
+
+    Information from:
+        -w3schools 
