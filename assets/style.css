@@ -35,3 +35,19 @@ body {
 .btn:hover {
     background-color: salmon;
 }
+
+.start-btn,
+.next-btn {
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
