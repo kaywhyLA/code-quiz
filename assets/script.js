@@ -1,24 +1,24 @@
-const startButton = document.getElementById('start-btn')
-const questionContainerElement = document.getElementById('question-container')
-
-startButton.addEventListener('click', startGame)
-
-
-function startGame() {
-    console.log('started')
-    startButton.classList.add('hide')
-    questionContainerElement.classList.remove('hide')
+//start button?//
+function startButton() {
+    addEventListener('click')
 
 }
 
-function setNextQuestion() {
-
+//presented with question//
+function startQuestions() {
 
 
 }
 
-function selectAnswer() {
 
+//timer starts//
 
+//answered incorrectly//
 
-}
+//time is subtracted from clock//
+
+//all questions are answered// 
+
+//game is over//
+
+//can save initials and score//
