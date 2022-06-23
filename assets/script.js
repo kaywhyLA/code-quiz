@@ -1,7 +1,6 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-const questionCounterText = document.getElementById('question');
-const scoreText = document.getElementById('score');
+
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -75,10 +74,16 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
+    if (avaliableQuestions.length === 0 || questionCounter >>
+        MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore')
+        return window.location.assign("../assets/end.html");
+    }
+
+
+
+
     questionCounter++;
-    questionCounterText.innerText = questionCounter + "/" + MAX_QUESTIONS;
-
-
     const questionIndex = Math.floor(Math.random() * avaliableQuestions.length);
     currentQuestion = avaliableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
