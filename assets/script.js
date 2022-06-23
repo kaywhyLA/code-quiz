@@ -66,18 +66,21 @@ const MAX_QUESTIONS = 3;
 
 startGame = () => {
     questionCounter = 0;
-    score = 0;
+    score = 10;
     avaliableQuestions = [...questions];
     console.log(avaliableQuestions);
+    timer = setInterval(startTime, 1000);
     getNewQuestion();
+
 
 };
 
 getNewQuestion = () => {
-    if (avaliableQuestions.length === 0 || questionCounter >>
+    if (avaliableQuestions.length === 0 || questionCounter >
         MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore')
+        localStorage.setItem('mostRecentScore', score)
         return window.location.assign("../assets/end.html");
+
     }
 
 
@@ -128,3 +131,27 @@ choices.forEach(choice => {
 
 
 startGame();
+
+var timer;
+var ele = document.getElementById('timer');
+console.log(ele);
+(function() {
+    var sec = 75;
+    timer = setInterval(() => {
+        ele.innerHTML = '00:' + sec;
+        sec++;
+    }, 1000)
+
+})
+
+var gameTime = 75;
+
+function startTime() {
+    var sec = 75;
+    gameTime--
+    ele.textContent = gameTime
+}
+
+function storeHighScore() {
+    addEventListener('click')
+};
