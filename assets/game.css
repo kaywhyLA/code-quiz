@@ -15,7 +15,6 @@ body {
 
 .choice-container:hover {
     cursor: pointer;
-    background-color: salmon;
 }
 
 .choice-container {
@@ -33,4 +32,12 @@ body {
 
 .choice-text {
     padding: .5rem;
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
 }
