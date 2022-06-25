@@ -7,3 +7,4 @@ highScoresList.innerHTML = highScores
                 $ { score.score } </li>`;
     })
     .join("")
+
